@@ -5,10 +5,39 @@ console.log(arr[0]);
 console.log(arr[1]);
 console.log(arr[2]);
 
-const arr2 = [true, false, "yay!", [3, 6, 7], null, 9];
-//console.log(arr2.length)
-arr2.push("pushed");
-arr2.pop()
-console.log(arr2);
+const people = [
+{
+    name: "blair",
+    numbers: [1,2,3],
+    cool: true,
+},
+{
+    name: "dakota",
+    numbers: [4,5,6],
+    cool: true,
+},
+{
+    name: "oleg",
+    numbers: [7,8,9],
+    cool: false,
+},
+{
+    name: "chenxi",
+    numbers: [10,11,12],
+    cool: true,
+},
+{
+    name: "michael",
+    numbers: [13,14,15],
+    cool: true,
+},
+]
 
-arr2.forEach((numbers) => console.log(numbers));
+people.forEach((people)=> console.log(people.name))
+people.forEach((yay)=> {
+    yay.numbers.forEach((Fk)=> console.log(Fk))
+})
+const cool = people.filter((whopper)=> {
+    return whopper.cool === true
+})
+console.log(cool)
